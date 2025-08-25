@@ -12,3 +12,12 @@
 
 ### Nota
 Non è necessario produrre un backend funzionante per il prototipo; può andare benissimo un array di dati fittizi inserito direttamente a codice.
+
+### Pacchetti utilizzati
+- bootstrap
+- bootstrap-icons
+- dotenv
+- react
+- react-dom
+- react-router
+- react-router-dom
