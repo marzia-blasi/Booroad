@@ -1,12 +1,14 @@
-# React + Vite
+# Il prototipo della nostra rubrica contatti
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Produciamo quindi un’interfaccia con le seguenti funzionalità:
 
-Currently, two official plugins are available:
+- Una schermata che visualizzi la lista dei viaggi attualmente in corso (con destinazione e data di inizio e fine).
+- La pagina del singolo viaggio mostrerà una schermata di rubrica contatti, in cui siano presenti tutti i partecipanti a quel viaggio.  
+  Per ciascun partecipante, visualizziamo nome e cognome.  
+  Cliccando sul nome di un partecipante, mostriamo a schermo la sua mail, il numero di telefono ed il codice fiscale.
+- In cima alla rubrica contatti inseriamo una barra di ricerca con la quale sarà possibile filtrare i partecipanti tramite nome e cognome.
+- *BONUS*: Aggiungere la possibilità di inserire un nuovo viaggio ed associarvi eventuali nuovi contatti.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Nota
+Non è necessario produrre un backend funzionante per il prototipo; può andare benissimo un array di dati fittizi inserito direttamente a codice.
