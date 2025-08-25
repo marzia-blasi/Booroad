@@ -1,5 +1,10 @@
+import Jumbotron from "./Components/Jumbotron";
+
 export default function Main() {
-
-    return <h1>Booroad</h1>
-
+  return (
+    <>
+      <Jumbotron />
+      <h1>Booroad</h1>
+    </>
+  );
 }
