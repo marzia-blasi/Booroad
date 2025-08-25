@@ -22,7 +22,7 @@ export default function Jumbotron() {
             blanditiis laborum ullam optio soluta nemo harum.
           </p>
           <a>
-            <button className="btn btn-avocado btn-lg" type="button">
+            <button className="btn btn-primary btn-lg" type="button">
               Vieni a sperderti
             </button>
           </a>
