@@ -5,7 +5,9 @@ export default function Header() {
     <>
       <nav className="navbar navbar-expand-sm navbar-light bg-dark">
         <div className="container">
-          <img src="../logo.png" alt="" />
+          <NavLink to="/">
+            <img className="nav-logo" src="../logo-transparent.png" alt="" />
+          </NavLink>
           <button
             className="navbar-toggler d-lg-none"
             type="button"
@@ -19,16 +21,6 @@ export default function Header() {
           </button>
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav me-auto mt-2 mt-lg-0">
-              <li className="nav-item">
-                <a
-                  className="nav-link active text-light"
-                  href="#"
-                  aria-current="page"
-                >
-                  Home
-                  <span className="visually-hidden">(current)</span>
-                </a>
-              </li>
               <li className="nav-item">
                 <NavLink
                   className="nav-link text-light"
