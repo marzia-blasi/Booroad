@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 
 import partecipants from "../db/partecipants.js";
+import ContactCard from "./ContactCard.jsx";
 
 export default function Partecipants() {
+  const selectedId = 2;
   return (
     <>
       <div className="container">
@@ -12,6 +14,7 @@ export default function Partecipants() {
               {partecipants.map((partecipant) => (
                 <div className="card-body" key={partecipant.id}>
                   <h3 className="card-title">{partecipant.first_name}</h3>
+                  <ContactCard id={selectedId} />
                   <h4 class="card-subtitle mb-2 text-body-secondary">
                     {partecipant.last_name}
                   </h4>
