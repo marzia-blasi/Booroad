@@ -1,7 +1,9 @@
+import { useParams } from "react-router-dom";
 import partecipants from "../db/partecipants.js";
 
-export default function ContactCard({ id }) {
-  const participant = partecipants.find((p) => p.id === id);
+export default function ContactCard() {
+  const { id } = useParams();
+  const partecipant = partecipants.find((p) => p.id === Number(id));
   return (
     <>
       <div className="container">
@@ -10,14 +12,14 @@ export default function ContactCard({ id }) {
             <div className="card">
               <div className="card-body" key={partecipant.id}>
                 <h3 className="card-title">{partecipant.first_name}</h3>
-                <h4 class="card-subtitle mb-2 text-body-secondary">
+                <h4 className="card-subtitle mb-2 text-body-secondary">
                   {partecipant.last_name}
                 </h4>
-                <p class="card-text">{partecipant.tax_code}</p>
+                <p classNAme="card-text">{partecipant.tax_code}</p>
                 <a href="#" class="card-link">
                   {partecipant.email}
                 </a>
-                <a href="#" class="card-link">
+                <a href="#" className="card-link">
                   {partecipant.phone}
                 </a>
               </div>
