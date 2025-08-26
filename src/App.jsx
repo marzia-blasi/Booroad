@@ -7,7 +7,6 @@ import Error404 from "./Pages/Error404";
 import TripsList from "./Pages/TripsList";
 import SingleTripPage from "./Pages/SingleTripPage";
 
-
 export default function Main() {
   return (
     <BrowserRouter>

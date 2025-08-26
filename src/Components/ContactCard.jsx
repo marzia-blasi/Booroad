@@ -16,7 +16,7 @@ export default function ContactCard() {
                   {partecipant.last_name}
                 </h4>
                 <p classNAme="card-text">{partecipant.tax_code}</p>
-                <a href="#" class="card-link">
+                <a href="#" className="card-link">
                   {partecipant.email}
                 </a>
                 <a href="#" className="card-link">
