@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import partecipants from "../db/partecipants.js";
 
-export default function SinglePartecipant() {
+export default function Partecipants() {
   return (
     <>
       <div className="container">
