@@ -5,6 +5,8 @@ import DefaultLayout from "./Layouts/DefaultLayout";
 import HomePage from "./Pages/HomePage";
 import Error404 from "./Pages/Error404";
 import TripsList from "./Pages/TripsList";
+import SingleTripPage from "./Pages/SingleTripPage";
+
 
 export default function Main() {
   return (
@@ -14,6 +16,7 @@ export default function Main() {
           <Route index element={<HomePage />} />
 
           <Route path="/tripslist" element={<TripsList />} />
+          <Route path="/tripslist/:id" element={<SingleTripPage />} />
 
           <Route path="*" element={<Error404 />} />
         </Route>
