@@ -9,7 +9,7 @@ export default function TripsList() {
         <div className="row row-cols-1 row-cols-md-3 g-3">
           {travels.map((item) => {
             return (
-              <div key={item.id} className="col">
+              <div key={"trip-" + item.id} className="col">
                 <div className="card p-3 h-100">
                   <h2>{item.title}</h2>
                   <img
@@ -18,7 +18,7 @@ export default function TripsList() {
                     alt={item.title}
                   />
                   <div className="card-body">
-                    <p>{item.text}</p>
+                    <p>{item.description}</p>
                     <div>Inizio viaggio: {item.start_date}</div>
                     <div>Fine viaggio: {item.end_date}</div>
                   </div>

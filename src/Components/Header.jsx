@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 export default function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
+      <nav className="navbar navbar-expand-sm navbar-light bg-dark">
         <div className="container">
           <img src="../logo.png" alt="" />
           <button
@@ -20,14 +20,18 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav me-auto mt-2 mt-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" href="#" aria-current="page">
+                <a
+                  className="nav-link active text-light"
+                  href="#"
+                  aria-current="page"
+                >
                   Home
                   <span className="visually-hidden">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
                 <NavLink
-                  className="nav-link"
+                  className="nav-link text-light"
                   to="/tripslist"
                   aria-current="page"
                 >
@@ -42,7 +46,7 @@ export default function Header() {
                 placeholder="Cerca Viaggi"
               />
               <button
-                className="btn btn-outline-success my-2 my-sm-0"
+                className="btn btn-outline-light my-2 my-sm-0"
                 type="submit"
               >
                 Cerca
