@@ -14,7 +14,7 @@ export default function Main() {
           <Route index element={<HomePage />} />
 
           <Route path="/tripslist" element={<TripsList />} />
-
+          <Route path="/Contatto" element={<SinglePartecipant />} />
           <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
