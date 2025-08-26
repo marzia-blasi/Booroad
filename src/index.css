@@ -1,6 +1,14 @@
 @import "bootstrap";
 @import "bootstrap-icons";
 
-img {
-  max-width: 500px;
+.travel-card {
+  height: 250px;
+  border: none;
+  border-radius: 12px;
+}
+
+.card-overlay {
+  background: rgba(0, 0, 0, 0.5); /* sfondo semi-trasparente */
+  font-size: 1.2rem;
+  width: 100%;
 }

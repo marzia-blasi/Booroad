@@ -17,7 +17,7 @@ export default function SingleTripPage() {
               alt={trip.title}
               className="img-fluid mx-auto mb-4 h-100"
             />
-            <p className="fs-5">{trip.text}</p>
+            <p className="fs-5">{trip.description}</p>
             <p>
               <strong>Data inizio:</strong> {trip.start_date}
             </p>
