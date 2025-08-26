@@ -1,2 +1,6 @@
 @import "bootstrap";
 @import "bootstrap-icons";
+
+img {
+  max-width: 500px;
+}
