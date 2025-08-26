@@ -41,4 +41,4 @@ const participants = [
   },
 ];
 
-module.exports = participants;
+export default participants;

@@ -41,4 +41,4 @@ const travels = [
   },
 ];
 
-module.exports = travels;
+export default travels;

@@ -51,4 +51,4 @@ const singleTrip = [
   },
 ];
 
-module.exports = singleTrip;
+export default singleTrip;
