@@ -5,10 +5,8 @@ export default function HomePage() {
     return (
 
         <>
-        
-            <Jumbotron />
 
-            <h1>Booroad</h1>
+            <Jumbotron />
 
         </>
 
