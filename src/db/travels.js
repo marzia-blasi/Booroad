@@ -49,6 +49,36 @@ const travels = [
     end_date: "25/10/2025",
     partecipants: [2, 4, 5],
   },
+  {
+    id: 6,
+    title: "Bali",
+    description:
+      "Relax tra le spiagge di sabbia bianca e le risaie terrazzate di Ubud. Yoga all'alba, escursioni nei templi induisti e cene al tramonto con vista sull'oceano. Un'esperienza spirituale e tropicale.",
+    img: "bali.jpg",
+    start_date: "02/08/2025",
+    end_date: "10/08/2025",
+    partecipants: [2, 4, 5],
+  },
+  {
+    id: 7,
+    title: "Oslo e i Fiordi",
+    description:
+      "Un'avventura nel cuore della Norvegia tra musei moderni, paesaggi mozzafiato e crociere nei fiordi. Giornate fresche e luminose, perfette per esplorare la natura incontaminata e gustare salmone affumicato.",
+    img: "oslo.jpg",
+    start_date: "18/07/2025",
+    end_date: "25/07/2025",
+    partecipants: [1, 2],
+  },
+  {
+    id: 8,
+    title: "Petra e il deserto del Wadi Rum",
+    description:
+      "Esplorazione dell'antica città nabatea scolpita nella roccia, seguita da notti sotto le stelle nel deserto giordano. Un viaggio tra storia, sabbia rossa e silenzi infiniti.",
+    img: "petra.jpg",
+    start_date: "12/11/2025",
+    end_date: "18/11/2025",
+    partecipants: [2, 3, 5],
+  },
 ];
 
 export default travels;
