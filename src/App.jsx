@@ -6,6 +6,7 @@ import HomePage from "./Pages/HomePage";
 import Error404 from "./Pages/Error404";
 import TripsList from "./Pages/TripsList";
 import SingleTripPage from "./Pages/SingleTripPage";
+import AboutUsPage from "./Pages/AboutUsPage";
 
 export default function Main() {
   return (
@@ -16,7 +17,7 @@ export default function Main() {
 
           <Route path="/tripslist" element={<TripsList />} />
           <Route path="/tripslist/:id" element={<SingleTripPage />} />
-
+          <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="*" element={<Error404 />} />
         </Route>
       </Routes>
