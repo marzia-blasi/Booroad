@@ -1,4 +1,4 @@
-const travels = [
+const trips = [
   {
     id: 1,
     title: "Roma",
@@ -81,4 +81,4 @@ const travels = [
   },
 ];
 
-export default travels;
+export default trips;

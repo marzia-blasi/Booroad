@@ -69,18 +69,21 @@ export default function AddTrip() {
         </div>
         <div className="mb-3">
           <label htmlFor="partecipants" className="form-label">
-            Aggiungi partecipanti:
+            Partecipanti:
           </label>
+
+        <AddPartecipant />
+
           <button className="btn btn-primary d-block">
             <i className="bi bi-plus-lg"></i>
           </button>
         </div>
-        <AddPartecipant />
 
         <button type="submit" className="btn btn-primary w-25 mx-auto">
-          Salva
+          Aggiungi viaggio
         </button>
       </form>
+      
     </>
   );
 }

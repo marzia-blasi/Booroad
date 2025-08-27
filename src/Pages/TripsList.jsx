@@ -1,15 +1,15 @@
 import { Link } from "react-router";
-import travels from "../db/travels";
+import trips from "../db/trips";
 import AddTrip from "../Components/AddTrip";
 
 export default function TripsList() {
   return (
     <>
       <div className="container my-5">
-        <h2 className="text-uppercase mb-3">i nostri viaggi:</h2>
+        <h2 className="mb-3">I nostri viaggi:</h2>
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5 g-3">
-          {travels.map((item) => (
+          {trips.map((item) => (
             <div key={item.id} className="col">
               <Link to={`/tripslist/${item.id}`}>
                 <div className="card travel-card position-relative overflow-hidden">

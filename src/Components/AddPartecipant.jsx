@@ -1,13 +1,12 @@
 export default function AddPartecipant() {
-  return (
-    <div className="p-5 mt-1 bg-body-tertiary rounded-4">
-      <h4 className="mb-5 text-center text-primary">
-        Aggiungi un nuovo partecipante
-      </h4>
 
-      <form>
-        <div className="row g-4">
-          <div className="col-md-6">
+  return (
+
+    <div className="mt-1 bg-body-tertiary rounded-4">
+
+      <div className="mb-3">
+        <div className="row g-1">
+          <div className="col">
             <label htmlFor="first_name" className="form-label small text-dark">
               Nome
             </label>
@@ -19,7 +18,7 @@ export default function AddPartecipant() {
             />
           </div>
 
-          <div className="col-md-6">
+          <div className="col">
             <label htmlFor="last_name" className="form-label small text-dark">
               Cognome
             </label>
@@ -31,7 +30,7 @@ export default function AddPartecipant() {
             />
           </div>
 
-          <div className="col-md-6">
+          <div className="col">
             <label htmlFor="email" className="form-label small text-dark">
               Email
             </label>
@@ -43,7 +42,7 @@ export default function AddPartecipant() {
             />
           </div>
 
-          <div className="col-md-6">
+          <div className="col">
             <label htmlFor="phone" className="form-label small text-dark">
               Cellulare
             </label>
@@ -55,7 +54,7 @@ export default function AddPartecipant() {
             />
           </div>
 
-          <div className="col-12">
+          <div className="col">
             <label
               htmlFor="codice_fiscale"
               className="form-label small text-dark"
@@ -71,12 +70,9 @@ export default function AddPartecipant() {
           </div>
         </div>
 
-        <div className="text-center mt-5">
-          <button type="submit" className="btn btn-primary px-5 py-2">
-            Aggiungi
-          </button>
-        </div>
-      </form>
+      </div>
     </div>
+
   );
+
 }
