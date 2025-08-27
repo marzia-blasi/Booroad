@@ -8,7 +8,7 @@ export default function Partecipantlist({ tripId }) {
   return (
     <section>
       <h5 className="mb-3 fw-bold">
-        <i class="bi bi-people-fill"></i> Partecipanti:
+        <i className="bi bi-people-fill"></i> Partecipanti:
       </h5>
 
       <div className="accordion" id="accordionExample">

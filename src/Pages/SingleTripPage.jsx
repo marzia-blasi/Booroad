@@ -24,21 +24,21 @@ export default function SingleTripPage() {
 
             <p className="fs-5">
               <strong>
-                <i class="fa-solid fa-book"></i> Descrizione:
+                <i className="fa-solid fa-book"></i> Descrizione:
               </strong>
               {trip.description}
             </p>
 
             <p className="fs-5">
               <strong>
-                <i class="fa-solid fa-plane-departure"></i> Inizio:
+                <i className="fa-solid fa-plane-departure"></i> Inizio:
               </strong>
               {trip.start_date}
             </p>
 
             <p className="fs-5">
               <strong>
-                <i class="fa-solid fa-plane-arrival"></i> Fine:
+                <i className="fa-solid fa-plane-arrival"></i> Fine:
               </strong>
               {trip.end_date}
             </p>
