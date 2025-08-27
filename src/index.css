@@ -16,3 +16,16 @@
 .nav-logo {
   height: 60px;
 }
+
+h1,
+h3 {
+  font-family: "Narevik W08 Black";
+}
+
+.img-team {
+  height: 450px;
+
+  img {
+    width: 100%;
+  }
+}

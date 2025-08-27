@@ -3,31 +3,38 @@ export default function AboutUsPage() {
     {
       id: 1,
       title: "Boo...Team",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae reprehenderit ipsum nihil, nam natus rerum voluptatum aperiam praesentium dicta rem labore, consequuntur expedita! Libero tempore voluptas debitis nesciunt, provident magni numquam blanditiis iste accusantium unde maiores accusamus eligendi quam nulla deleniti ullam laboriosam veniam doloremque et sequi. Perferendis, illo.",
+      text: "Siamo un giovane team di sviluppatori web, motivati dalla voglia di innovare e creare soluzioni digitali su misura. Lavoriamo con entusiasmo e competenze aggiornate per realizzare siti e applicazioni moderni, veloci e user-friendly. Crediamo nella collaborazione e nell’ascolto delle esigenze dei clienti, trasformando le idee in progetti concreti e funzionali. Ogni riga di codice per noi è un’opportunità per crescere e offrire il meglio, unendo design accattivante e tecnologia solida. Il nostro obiettivo è costruire esperienze digitali che semplifichino la vita e rendano ogni progetto un successo condiviso.",
       crew: [<li>Marzia</li>, <li>Asia</li>, <li>Tommaso</li>, <li>Simone</li>],
+      img: "../teamBoo.jpg",
     },
     {
       id: 2,
       title: "Road..team",
-      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae reprehenderit ipsum nihil, nam natus rerum voluptatum aperiam praesentium dicta rem labore, consequuntur expedita! Libero tempore voluptas debitis nesciunt, provident magni numquam blanditiis iste accusantium unde maiores accusamus eligendi quam nulla deleniti ullam laboriosam veniam doloremque et sequi. Perferendis, illo.",
+      text: "Siamo un team di organizzatori di viaggi appassionati e professionali. Amiamo trasformare ogni avventura in un’esperienza indimenticabile, curando ogni dettaglio con entusiasmo e precisione. Dalla pianificazione alla realizzazione, ci occupiamo di itinerari personalizzati, attività coinvolgenti e sistemazioni confortevoli, garantendo sicurezza e divertimento. La nostra missione è rendere ogni viaggio semplice, piacevole e memorabile, offrendo supporto costante e consigli esperti. Con noi, ogni destinazione diventa un’opportunità per scoprire, imparare e divertirsi, creando ricordi preziosi da condividere. Viaggiando insieme, trasformiamo sogni e idee in esperienze concrete, con passione, professionalità e un sorriso sempre pronto ad accoglierti.",
       crew: [<li>Luca</li>, <li>Sara</li>, <li>Davide</li>, <li>Elena</li>],
+      img: "../teamRoad.jpg",
     },
   ];
 
   return (
     <>
-      <h1>Chi siamo</h1>
-      <div className="container d-flex">
-        {teams.map(({ id, title, text, crew }) => (
-          <div key={id}>
-            <img src="https://picsum.photos/id/237/300/300" alt="" />
-            <div className="row ms-4">
-              <h3>{title}</h3>
-              <p>{text}</p>
-              <ul>{crew}</ul>
+      <h1 class="text-center m-3">Chi siamo</h1>
+
+      <div className="container">
+        <div className="row">
+          {teams.map(({ id, title, text, crew, img }) => (
+            <div key={id} className="col-12 col-lg-6 mb-4">
+              <div className="p-3 border rounded h-100">
+                <div className="img-team">
+                  <img src={img} alt={title} className="" />
+                </div>
+                <h3>{title}</h3>
+                <p>{text}</p>
+                <ul>{crew}</ul>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
