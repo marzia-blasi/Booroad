@@ -7,7 +7,7 @@ export default function TripsList() {
       <div className="container my-5">
         <h2 className="text-uppercase mb-3">i nostri viaggi:</h2>
 
-        <div className="row row-cols-1 row-cols-md-3 g-3">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
           {travels.map((item) => (
             <div key={item.id} className="col">
               <Link to={`/tripslist/${item.id}`}>
