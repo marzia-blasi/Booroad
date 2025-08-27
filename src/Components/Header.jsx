@@ -27,7 +27,7 @@ export default function Header() {
                   to="/tripslist"
                   aria-current="page"
                 >
-                  Lista Viaggi
+                  Lista viaggi
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -36,7 +36,7 @@ export default function Header() {
                   to="/aboutus"
                   aria-current="page"
                 >
-                  chi siamo
+                  Chi siamo
                 </NavLink>
               </li>
             </ul>
