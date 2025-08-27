@@ -6,7 +6,7 @@ export default function TripsList() {
   return (
     <>
       <div className="container my-5">
-        <h2 className="mb-4">I nostri viaggi:</h2>
+        <h2 className="mb-4 list-title">I nostri viaggi:</h2>
 
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-5 g-3">
           {trips.map((item) => (
