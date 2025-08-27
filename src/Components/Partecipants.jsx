@@ -1,24 +1,16 @@
-import { useEffect, useState } from "react";
-
 import partecipants from "../db/partecipants.js";
-import ContactCard from "./ContactCard.jsx";
 
 export default function Partecipants() {
   return (
-    <>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6">
-            <div className="card">
-              {partecipants.map((partecipant) => (
-                <div className="card-body" key={partecipant.id}>
-                  <h3 className="card-title">{partecipant.first_name}</h3>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+    <div className="text-center mt-5">
+      <h4 className="mb-4">Partecipanti al viaggio:</h4>
+      <ul className="list-unstyled text-center">
+        {partecipants.map((partecipant) => (
+          <li key={partecipant.id} className="fs-5 mb-2">
+            {partecipant.first_name} {partecipant.last_name}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
