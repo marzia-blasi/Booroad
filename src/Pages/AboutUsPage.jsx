@@ -19,14 +19,14 @@ export default function AboutUsPage() {
       <h1>Chi siamo</h1>
       <div className="container d-flex">
         {teams.map(({ id, title, text, crew }) => (
-          <>
+          <div key={id}>
             <img src="https://picsum.photos/id/237/300/300" alt="" />
-            <div className="row ms-4" key={id}>
+            <div className="row ms-4">
               <h3>{title}</h3>
               <p>{text}</p>
               <ul>{crew}</ul>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </>

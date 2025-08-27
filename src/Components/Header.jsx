@@ -30,6 +30,15 @@ export default function Header() {
                   Lista Viaggi
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link text-light"
+                  to="/aboutus"
+                  aria-current="page"
+                >
+                  chi siamo
+                </NavLink>
+              </li>
             </ul>
             <form className="d-flex my-2 my-lg-0">
               <input
