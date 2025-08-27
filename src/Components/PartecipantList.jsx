@@ -15,7 +15,7 @@ export default function PartecipantList({ tripId }) {
 
       <div className="mb-2">
         <input
-          className="form-control"
+          className="form-control px-3 py-2"
           type="search"
           placeholder="Filtra..."
           value={filter}
