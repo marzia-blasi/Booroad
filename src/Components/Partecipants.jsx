@@ -2,7 +2,7 @@ import partecipants from "../db/partecipants.js";
 
 export default function Partecipants() {
   return (
-    <div className="text-center mt-5">
+    <div className="text-center mt-4">
       <h4 className="mb-4">Partecipanti al viaggio:</h4>
       <ul className="list-unstyled text-center">
         {partecipants.map((partecipant) => (
