@@ -1,12 +1,9 @@
 import partecipants from "../db/partecipants.js";
 
-export default function SinglePartecipant({ id, filter }) {
+export default function SinglePartecipant({ id }) {
   const partecipant = partecipants.find((p) => p.id === Number(id));
 
-  const fullName = `${partecipant.first_name} ${partecipant.last_name}`.toLowerCase();
-  if (filter && !fullName.includes(filter.toLowerCase())) {
-    return null;
-  }
+  if (!partecipant) return null;
 
   return (
     <div key={partecipant.id} className="accordion-item">
