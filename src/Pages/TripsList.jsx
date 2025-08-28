@@ -30,7 +30,7 @@ export default function TripsList() {
             <a href="#add-trip">
               <div className="card travel-card d-flex justify-content-center align-items-center border-dashed">
                 <span className="display-5 text-primary">
-                  <i class="bi bi-plus-lg"></i>
+                  <i className="bi bi-plus-lg"></i>
                 </span>
               </div>
             </a>
