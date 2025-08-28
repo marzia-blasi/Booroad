@@ -12,7 +12,7 @@ export default function Header() {
       <div className="container">
 
         <NavLink to="/">
-          <img className="nav-logo me-3" src="../logo-transparent.png" alt="Logo" />
+          <img className="nav-logo" src="../logo-transparent.png" alt="Logo" />
         </NavLink>
 
         <button
@@ -28,7 +28,7 @@ export default function Header() {
         </button>
 
         <div className="collapse navbar-collapse" id="collapsibleNavId">
-          <ul className="navbar-nav me-auto mt-2 mt-lg-0">
+          <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
             {navLinks.map((link) => (
               <li className="nav-item" key={link.path}>
                 <NavLink
@@ -43,10 +43,10 @@ export default function Header() {
             ))}
           </ul>
 
-          <form className="d-flex my-2 my-lg-0">
+{/*           <form className="d-flex my-2 my-lg-0">
             <input
               className="form-control me-sm-2"
-              type="text"
+              type="search"
               placeholder="Cerca Viaggi"
             />
             <button
@@ -55,7 +55,8 @@ export default function Header() {
             >
               Cerca
             </button>
-          </form>
+          </form> */}
+
         </div>
       </div>
     </nav>
