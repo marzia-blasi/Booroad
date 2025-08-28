@@ -1,6 +1,21 @@
+import { useState } from 'react';
+
 import AddPartecipant from "./AddPartecipant";
 
 export default function AddTrip() {
+
+  const [newTripPartecipants, setNewTripPartecipants] = useState([]);
+
+  function handleAddPartecipantButtonClick(event) {
+    event.preventDefault();
+    setNewTripPartecipants([...newTripPartecipants, <AddPartecipant key={newTripPartecipants.length} />]);
+  }
+
+  function handleAddTripFormSubmit() {
+    event.preventDefault();
+    alert('Viaggio aggiunto con successo!');
+  }
+
   return (
     <>
       <h3 className="mb-4">Aggiungi nuovo viaggio</h3>
@@ -72,18 +87,18 @@ export default function AddTrip() {
             Partecipanti:
           </label>
 
-        <AddPartecipant />
+          {newTripPartecipants}
 
-          <button className="btn btn-primary d-block">
+          <button className="btn btn-primary d-block" onClick={handleAddPartecipantButtonClick}>
             <i className="bi bi-plus-lg"></i>
           </button>
         </div>
 
-        <button type="submit" className="btn btn-primary w-25 mx-auto">
+        <button type="submit" className="btn btn-primary w-25 mx-auto" onClick={handleAddTripFormSubmit}>
           Aggiungi viaggio
         </button>
       </form>
-      
+
     </>
   );
 }
