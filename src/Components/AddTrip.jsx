@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import AddPartecipant from "./AddPartecipant";
+import PartecipantsSelector from "./PartecipantsSelector";
 
 export default function AddTrip() {
   const [newTripPartecipants, setNewTripPartecipants] = useState([]);
@@ -15,7 +16,7 @@ export default function AddTrip() {
 
   function handleAddTripFormSubmit(event) {
     event.preventDefault();
-    alert("Viaggio aggiunto con successo!");
+    alert("Viaggio con relativi partecipanti aggiunto con successo!");
   }
 
   return (
@@ -90,6 +91,10 @@ export default function AddTrip() {
           <label htmlFor="partecipants" className="form-label">
             <strong>Partecipanti:</strong>
           </label>
+
+          <div>
+            <PartecipantsSelector />
+          </div>
 
           {newTripPartecipants}
 
