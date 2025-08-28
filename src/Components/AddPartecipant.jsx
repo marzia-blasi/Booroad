@@ -2,13 +2,13 @@ export default function AddPartecipant() {
 
   return (
 
-    <div className="mt-1 bg-body-tertiary rounded-4">
+    <div className="my-3 p-3 bg-body-tertiary rounded-1 border border-1">
 
       <div className="mb-3">
         <div className="row g-1">
-          <div className="col">
+          <div className="col-12 col-lg">
             <label htmlFor="first_name" className="form-label small text-dark">
-              Nome
+              <strong>Nome</strong>
             </label>
             <input
               type="text"
@@ -18,9 +18,9 @@ export default function AddPartecipant() {
             />
           </div>
 
-          <div className="col">
+          <div className="col-12 col-lg">
             <label htmlFor="last_name" className="form-label small text-dark">
-              Cognome
+              <strong>Cognome</strong>
             </label>
             <input
               type="text"
@@ -30,21 +30,21 @@ export default function AddPartecipant() {
             />
           </div>
 
-          <div className="col">
+          <div className="col-12 col-lg">
             <label htmlFor="email" className="form-label small text-dark">
-              Email
+              <strong>Email</strong>
             </label>
             <input
               type="email"
               className="form-control px-3 py-2"
               id="email"
-              placeholder="Inserisci l'email @"
+              placeholder="Inserisci l'email"
             />
           </div>
 
-          <div className="col">
+          <div className="col-12 col-lg">
             <label htmlFor="phone" className="form-label small text-dark">
-              Cellulare
+              <strong>Numero di cellulare</strong>
             </label>
             <input
               type="tel"
@@ -54,12 +54,12 @@ export default function AddPartecipant() {
             />
           </div>
 
-          <div className="col">
+          <div className="col-12 col-lg">
             <label
               htmlFor="codice_fiscale"
               className="form-label small text-dark"
             >
-              Codice Fiscale
+              <strong>Codice Fiscale</strong>
             </label>
             <input
               type="text"

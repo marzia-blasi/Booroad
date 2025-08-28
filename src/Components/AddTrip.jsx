@@ -26,7 +26,7 @@ export default function AddTrip() {
       <form className="card bg-light p-3">
         <div className="mb-3">
           <label htmlFor="place" className="form-label">
-            Viaggio a:
+            <strong>Viaggio a:</strong>
           </label>
           <input
             type="text"
@@ -39,7 +39,7 @@ export default function AddTrip() {
         </div>
         <div className="mb-3">
           <label htmlFor="description" className="form-label">
-            Descrizione luogo:
+            <strong>Descrizione luogo:</strong>
           </label>
           <input
             type="text"
@@ -52,7 +52,7 @@ export default function AddTrip() {
         </div>
         <div className="mb-3">
           <label htmlFor="start" className="form-label">
-            Inizio viaggio:
+            <strong>Inizio viaggio:</strong>
           </label>
           <input
             type="date"
@@ -64,7 +64,7 @@ export default function AddTrip() {
         </div>
         <div className="mb-3">
           <label htmlFor="end" className="form-label">
-            Fine viaggio:
+            <strong>Fine viaggio:</strong>
           </label>
           <input
             type="date"
@@ -76,7 +76,7 @@ export default function AddTrip() {
         </div>
         <div className="mb-3">
           <label htmlFor="" className="form-label">
-            Immagine:
+            <strong>Immagine:</strong>
           </label>
           <input
             type="file"
@@ -88,7 +88,7 @@ export default function AddTrip() {
         </div>
         <div className="mb-3">
           <label htmlFor="partecipants" className="form-label">
-            Partecipanti:
+            <strong>Partecipanti:</strong>
           </label>
 
           {newTripPartecipants}
