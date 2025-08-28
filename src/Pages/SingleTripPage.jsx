@@ -19,28 +19,25 @@ export default function SingleTripPage() {
             <img
               src={`/${trip.img}`}
               alt={trip.title}
-              className="img-fluid mx-auto mb-4 h-100"
+              className="img-fluid mx-auto mb-4 h-100 px-2"
             />
 
-            <p className="fs-5">
+            <p className="fs-5 px-2">
               <strong>
                 <i className="fa-solid fa-book"></i> Descrizione:
-              </strong>
-              {trip.description}
+              </strong> {trip.description}
             </p>
 
-            <p className="fs-5">
+            <p className="fs-5 px-2">
               <strong>
                 <i className="fa-solid fa-plane-departure"></i> Inizio:
-              </strong>
-              {trip.start_date}
+              </strong> {trip.start_date}
             </p>
 
-            <p className="fs-5">
+            <p className="fs-5 px-2">
               <strong>
                 <i className="fa-solid fa-plane-arrival"></i> Fine:
-              </strong>
-              {trip.end_date}
+              </strong> {trip.end_date}
             </p>
 
             <PartecipantList tripId={tripId} />

@@ -30,9 +30,11 @@ export default function AboutUsPage() {
                 </div>
                 <h3>{title}</h3>
                 <p>{text}</p>
-                <ul>
+                <ul className="px-0">
                   {crew.map((member, index) => (
-                    <li key={index}>{member}</li>
+                    <li key={index} className="list-unstyled">
+                      <i className="bi bi-person-square"></i> {member}
+                    </li>
                   ))}
                 </ul>
               </div>

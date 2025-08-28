@@ -9,8 +9,8 @@ export default function PartecipantList({ tripId }) {
 
   return (
     <section>
-      <h5 className="mb-3 fw-bold">
-        <i className="bi bi-people-fill"></i> Partecipanti:
+      <h5 className="mb-3 fw-bold px-2">
+        <i className="bi bi-person-vcard-fill"></i> Partecipanti:
       </h5>
 
       <div className="mb-2">
@@ -31,5 +31,3 @@ export default function PartecipantList({ tripId }) {
     </section>
   );
 }
-
-
