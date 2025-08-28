@@ -34,3 +34,7 @@ h3 {
 .active-link {
   color: #a4cb6a !important;
 }
+
+.border-dashed {
+  border: 2px dashed #0d6efd;
+}
