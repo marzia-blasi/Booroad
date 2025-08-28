@@ -21,6 +21,9 @@ export default function TripsList() {
                   <div className="card-overlay position-absolute top-0 start-0 p-2 text-white fw-bold">
                     {item.title}
                   </div>
+                  <div className="card-overlay position-absolute bottom-0 start-0 p-2 text-white text-end">
+                    {item.start_date} - {item.end_date}
+                  </div>
                 </div>
               </Link>
             </div>
