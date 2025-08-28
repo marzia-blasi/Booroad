@@ -3,11 +3,16 @@ import { useParams } from "react-router-dom";
 import trips from "../db/trips.js";
 
 import PartecipantList from "../Components/PartecipantList.jsx";
+import Error404Page from "../Pages/Error404Page.jsx";
 
 export default function SingleTripPage() {
   const { tripId } = useParams();
 
   const trip = trips.find((trip) => trip.id === parseInt(tripId));
+
+  if (!trip) {
+    return <Error404Page />;
+  }
 
   return (
     <div className="container my-5">
